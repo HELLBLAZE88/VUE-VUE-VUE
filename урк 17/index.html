@@ -1,0 +1,32 @@
+<html>
+<head>
+	<title>братишка VUE</title>
+	<meta charset="utf-8">
+</head>
+<body>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<div id = "tema1">
+	<a href='yandex.ru' v-on:click.prevent='ssyl'> {{ aaa }} </a>
+	<p>{{ jepe }}</p>
+</div>
+	
+<br>
+
+<div id = "tema2">
+	<p v-once> {{ slovo }} </p>
+	<button v-on:click = 'texue'>{{ slovo }}</button>
+</div>
+
+<br>
+
+<div id = "tema3">
+	<p>{{ kolbasa }}</p>
+	<button v-on:click = 'syr'>клик</button>
+</div>
+
+<script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>

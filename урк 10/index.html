@@ -1,0 +1,52 @@
+<html>
+<head>
+	<title>братишка VUE</title>
+	<meta charset="utf-8">
+</head>
+<body>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<div id = "pro1">
+	<textarea v-model = "dobavka"></textarea>
+	<button v-on:click = "razdel()">жямк</button>
+	<ul>
+		<li v-for="elm in choto">{{ elm }}</li>
+	</ul>
+</div>
+
+<br>
+
+<div id = "pro2">
+	<input type="checkbox" v-model="chek" value="вовка">
+	<input type="checkbox" v-model="chek" value="рыбка">
+	<input type="checkbox" v-model="chek" value="букет">
+	<ul>
+		<li v-for="elm in chek">{{ elm }}</li>
+	</ul>
+</div>
+
+<br>
+
+<div id = "pro3">
+<p>Какой ваш язык родной?</p>
+	<input name="radio" type="radio" v-model="jajik" value="Русский">
+	<input name="radio" type="radio" v-model="jajik" value="Украинский">
+	<input name="radio" type="radio" v-model="jajik" value="Белорусский">
+	<input name="radio" type="radio" v-model="jajik" value="Казахский">
+<p>Ваш ответ: {{ jajik }}</p>
+</div>
+
+<br>
+
+<div id = "pro4">
+	<select v-model = "vibor">
+	<option v-for = "ovosh in ovoshi">{{ ovosh }}</option>
+	</select>
+	<p>Ваш любимый овощ из предложенных: {{ vibor }}</p>
+</div>
+
+<script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>

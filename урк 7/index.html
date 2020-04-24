@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title>братишка VUE</title>
+	<meta charset="utf-8">
+</head>
+<body>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<div id = "usl1">
+	<p v-if = "age <= 18 && age > 0">подросток</p>
+	<p v-else-if = "age > 18 && age <= 25">молодой челвк</p>
+	<p v-else-if = "age > 25">мужчина</p>
+</div>
+
+<br>
+
+<div id = "usl2">
+<template v-if = "hewo == true">
+	<p>виу</p>
+	<p>вау</p>
+	<p>чмпоньки</p>
+</template>
+<button v-on:click = "yoy()">тык</button>
+</div>
+
+<script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
